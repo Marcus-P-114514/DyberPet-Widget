@@ -36,7 +36,7 @@
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
-    <QtInstall>5.12.12_mingw73_64</QtInstall>
+    <QtInstall>5.12.12_msvc2017_64</QtInstall>
     <QtModules>core;gui;widgets</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
@@ -55,9 +55,26 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <IncludePath>$(QtDir)\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <IncludePath>$(QtDir)\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+    </ClCompile>
+    <CustomBuildStep>
+      <Inputs>C:\Dev\Qt\5.12.12\msvc2017_64\bin\moc.exe;C:\Dev\Qt\5.12.12\msvc2017_64\bin\uic.exe;%(Inputs)</Inputs>
+      <Command>C:\Dev\Qt\5.12.12\msvc2017_64\bin\moc.exe
+C:\Dev\Qt\5.12.12\msvc2017_64\bin\uic.exe</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ClCompile>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>

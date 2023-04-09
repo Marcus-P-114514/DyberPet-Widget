@@ -103,6 +103,12 @@
              <height>12</height>
             </size>
            </property>
+           <property name="maximumSize">
+            <size>
+             <width>12</width>
+             <height>12</height>
+            </size>
+           </property>
            <property name="styleSheet">
             <string notr="true">QPushButton{
 	background-color: transparent;
@@ -141,6 +147,12 @@ QPushButton::clicked{
              <height>10</height>
             </size>
            </property>
+           <property name="maximumSize">
+            <size>
+             <width>10</width>
+             <height>10</height>
+            </size>
+           </property>
            <property name="styleSheet">
             <string notr="true">QPushButton{
 	background-color: transparent;
@@ -173,6 +185,12 @@ QPushButton::clicked{
             </sizepolicy>
            </property>
            <property name="minimumSize">
+            <size>
+             <width>12</width>
+             <height>12</height>
+            </size>
+           </property>
+           <property name="maximumSize">
             <size>
              <width>12</width>
              <height>12</height>
