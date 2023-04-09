@@ -1,10 +1,10 @@
-# 呆啵宠物QWidget版 | DyberPet Widget
+# 呆啵宠物Qt Widget版 | DyberPet Widget
 
 [![License](https://img.shields.io/github/license/Marcus-P-114514/DyberPet-Widget.svg)](LICENSE) ![Qt Version](https://img.shields.io/badge/Qt-5.12.12-green.svg) ![DyberPet Version](https://img.shields.io/badge/DyberPet-v0.2.2-blue.svg) ![DyberPet-Widget Version](https://img.shields.io/badge/DyberPetWidget-v0.0.1-9cf.svg) ![Build](https://img.shields.io/badge/Build-Pending-yellow.svg)  ![](https://img.shields.io/badge/Made%20with-Love-red)
 
-**About DyberPet**：DyberPet is a desktop pet framework based on PyQt5. The project is committed to providing developers with the underlying function library for creating desktop pets. The project is currently in a very early stage, and we welcome everyone to join and build the framework together.
+**About DyberPet**: DyberPet is a desktop pet framework based on PyQt5. The project is committed to providing developers with the underlying function library for creating desktop pets. The project is currently in a very early stage, and we welcome everyone to join and build the framework together.
 
-**About this Project**：The original intention of this project is to meet the needs of using DyberPet on mobile devices. [DyberPet](https://github.com/ChaozhongLiu/DyberPet) was reconstructed using QWidget to facilitate the compilation of the mobile device version.
+**About this Project**: The original intention of this project is to meet the needs of using DyberPet on mobile devices. [DyberPet](https://github.com/ChaozhongLiu/DyberPet) was reconstructed using Qt Widget to facilitate the compilation of the mobile device version.
 
 如果需要阅读简体中文版的Readme，请戳[这里](../Chinese/readme.md)。
 

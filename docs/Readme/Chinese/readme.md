@@ -1,10 +1,10 @@
-# 呆啵宠物QWidget版 | DyberPet Widget
+# 呆啵宠物Qt Widget版 | DyberPet Widget
 
 [![License](https://img.shields.io/github/license/Marcus-P-114514/DyberPet-Widget.svg)](LICENSE) ![Qt Version](https://img.shields.io/badge/Qt-5.12.12-green.svg) ![DyberPet Version](https://img.shields.io/badge/DyberPet-v0.2.2-blue.svg) ![DyberPet-Widget Version](https://img.shields.io/badge/DyberPetWidget-v0.0.1-9cf.svg) ![Build](https://img.shields.io/badge/Build-Pending-yellow.svg)  ![](https://img.shields.io/badge/Made%20with-Love-red)
 
 **关于呆啵宠物的简介**：呆啵宠物 (DyberPet) 是一个基于 PyQt5 的桌面宠物开发框架，致力于为开发者提供创造桌面宠物的底层功能库。目前项目处于极早期阶段，欢迎各位的加入，一起构建框架 (´･Д･)」
 
-**关于此项目的简介**：这个项目的初衷是满足在移动设备上使用DyberPet的需求，使用QWidget重构了[原版DyberPet](https://github.com/ChaozhongLiu/DyberPet)，以方便编译移动设备版。
+**关于此项目的简介**：这个项目的初衷是满足在移动设备上使用DyberPet的需求，使用Qt Widget重构了[原版DyberPet](https://github.com/ChaozhongLiu/DyberPet)，以方便编译移动设备版。
 
 If you need English Version, please click [here](../English/readme.md).
 
