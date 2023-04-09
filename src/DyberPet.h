@@ -2,6 +2,9 @@
 
 #include <QMainWindow>
 #include "ui_DyberPet.h"
+#include "GlobalVariable.h"
+
+class GlobalVariable;
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class DyberPetClass; };

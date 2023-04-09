@@ -5,6 +5,7 @@ StatusMonitor::StatusMonitor(QWidget *parent)
 	, ui(new Ui::StatusMonitorClass())
 {
 	ui->setupUi(this);
+	
 }
 
 StatusMonitor::~StatusMonitor()

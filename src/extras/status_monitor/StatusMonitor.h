@@ -2,6 +2,9 @@
 
 #include <QWidget>
 #include "ui_StatusMonitor.h"
+#include "../../GlobalVariable.h"
+
+class GlobalVariable;
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class StatusMonitorClass; };
