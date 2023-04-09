@@ -6,7 +6,7 @@
 
 **关于此项目的简介**：这个项目的初衷是满足在移动设备上使用DyberPet的需求，使用QWidget重构了[原版DyberPet](https://github.com/ChaozhongLiu/DyberPet)，以方便编译移动设备版。
 
-If you need English Version, please click [here](./docs/Readme/English/readme.md).
+If you need English Version, please click [here](../English/readme.md).
 
 
 
