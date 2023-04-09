@@ -1,5 +1,6 @@
 #include "GlobalVariable.h"
 
+//这些变量根据不同的系统而变化
 #ifdef Q_OS_WIN
 QString GlobalVariable::CurrentPlatform = "Windows";
 QString GlobalVariable::BaseDir = "./";
@@ -29,3 +30,7 @@ QString GlobalVariable::CurrentPlatform = "iOS";
 QString GlobalVariable::BaseDir = QString DataDir = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
 QString GlobalVariable::ConfigPath = GlobalVariable::BaseDir + "/config/config.json";
 #endif // iOS
+
+//这些变量与运行的操作系统无关
+QString GlobalVariable::DyberPetVersion = "v.0.2.2";
+QString GlobalVariable::DyberPetWidgetVersion = "v.0.0.1";

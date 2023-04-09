@@ -5,6 +5,7 @@
 #include "GlobalVariable.h"
 
 class GlobalVariable;
+class StatusMonitor;
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class DyberPetClass; };

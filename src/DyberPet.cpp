@@ -9,6 +9,9 @@ DyberPet::DyberPet(QWidget *parent)
 
     StatusMonitor* status_monitor = new StatusMonitor;
     status_monitor->show();
+
+    status_monitor->InsertLog("INFO", "DyberPet Version: " + GlobalVariable::DyberPetVersion);
+    status_monitor->InsertLog("INFO", "DyberPet-Widget Version: " + GlobalVariable::DyberPetWidgetVersion);
 }
 
 DyberPet::~DyberPet()

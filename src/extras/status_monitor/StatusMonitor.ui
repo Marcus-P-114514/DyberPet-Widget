@@ -317,7 +317,11 @@ QPushButton:clicked{
             <string notr="true">#log_area{
 	background-color: #FFF;
 	border: 0px solid #FFF;
+	font-size: 14px;
 }</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
            </property>
           </widget>
          </item>

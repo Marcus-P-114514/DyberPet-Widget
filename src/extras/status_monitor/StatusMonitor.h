@@ -1,6 +1,7 @@
 #pragma once
 
 #include <QWidget>
+#include <QDebug>
 #include "ui_StatusMonitor.h"
 #include "../../GlobalVariable.h"
 
@@ -17,6 +18,9 @@ class StatusMonitor : public QWidget
 public:
 	StatusMonitor(QWidget *parent = nullptr);
 	~StatusMonitor();
+
+public slots:
+	void StatusMonitor::InsertLog(QString LogType, QString LogContent);
 
 private:
 	Ui::StatusMonitorClass *ui;
