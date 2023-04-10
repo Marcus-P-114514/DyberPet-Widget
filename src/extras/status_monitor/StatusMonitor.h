@@ -2,6 +2,7 @@
 
 #include <QWidget>
 #include <QDebug>
+#include <QGraphicsDropShadowEffect>
 #include "ui_StatusMonitor.h"
 #include "../../GlobalVariable.h"
 

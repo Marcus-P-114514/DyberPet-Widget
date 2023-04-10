@@ -5,6 +5,13 @@ StatusMonitor::StatusMonitor(QWidget *parent)
 	, ui(new Ui::StatusMonitorClass())
 {
 	ui->setupUi(this);
+
+	//¿¨Æ¬ÒõÓ°
+	QGraphicsDropShadowEffect* CardShadow = new QGraphicsDropShadowEffect(this);
+	CardShadow->setColor(QColor("#C1A6A5"));
+	CardShadow->setBlurRadius(30);
+	CardShadow->setOffset(0, 0);
+	ui->app_container->setGraphicsEffect(CardShadow);
 }
 
 StatusMonitor::~StatusMonitor()
