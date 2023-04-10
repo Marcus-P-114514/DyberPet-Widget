@@ -31,26 +31,9 @@ DyberPet::~DyberPet()
 
 void DyberPet::CreateConfig()
 {
-    QJsonObject ConfigObject;
-    QJsonArray HDPIConfigArray;
-    QJsonObject HDPIConfigDetail;
-    HDPIConfigDetail.insert("OverrideHDPI", "Off");
-    HDPIConfigDetail.insert("EnableHDPI", "On");
-    HDPIConfigDetail.insert("CustomHDPIScale", "1.00");
-    HDPIConfigArray.append(QJsonValue(HDPIConfigDetail));
-    ConfigObject.insert("HDPI", QJsonValue(HDPIConfigArray));
-
-    QJsonDocument WriteConfig(ConfigObject);
-    QByteArray ConfigContent = WriteConfig.toJson();
-    QFile TargetConfigPath (GlobalVariable::ConfigPath);
-    
-    if (TargetConfigPath.open(QIODevice::WriteOnly))
-    {
-        TargetConfigPath.write(ConfigContent);
-        TargetConfigPath.close();
-        }
-        else
-        {
-            qDebug() << "write error!" << endl;
-        }
+    QSettings* CreateConfig = new QSettings(GlobalVariable::ConfigPath, QSettings::IniFormat);
+    CreateConfig->setValue("HDPI/OverrideHDPI", "Off");
+    CreateConfig->setValue("HDPI/EnableHDPIScale", "On");
+    CreateConfig->setValue("HDPI/CustomScale", "1.00");
+    delete CreateConfig;
 }

@@ -4,6 +4,7 @@
 #include "ui_DyberPet.h"
 #include "GlobalVariable.h"
 #include "QFile"
+#include "QSettings"
 
 class GlobalVariable;
 class StatusMonitor;
