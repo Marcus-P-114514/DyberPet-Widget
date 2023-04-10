@@ -21,6 +21,7 @@ DyberPet::DyberPet(QWidget *parent)
     else {
         StatusMonitorMain->InsertLog("WARN", "Config not found, generating new config file...");
         DyberPet::CreateConfig();
+        StatusMonitorMain->InsertLog("INFO", "Config has been created.");
     }   //ÅäÖÃ²»´æÔÚ
 }
 
