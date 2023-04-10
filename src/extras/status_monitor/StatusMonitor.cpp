@@ -111,6 +111,22 @@ void StatusMonitor::TrigMaximize()
 	
 }
 
-void StatusMonitor::mouseDoubleClickEvent(QMouseEvent* event) {
+void StatusMonitor::mouseDoubleClickEvent(QMouseEvent* event) 
+{
 	StatusMonitor::TrigMaximize();
+}
+
+void StatusMonitor::on_minimize_app_clicked()
+{
+	this->showMinimized();
+}
+
+void StatusMonitor::on_maximize_app_clicked()
+{
+	StatusMonitor::TrigMaximize();
+}
+
+void StatusMonitor::on_close_app_clicked()
+{
+	this->hide();
 }

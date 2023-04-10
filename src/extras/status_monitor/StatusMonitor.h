@@ -36,4 +36,7 @@ private slots:
 	void mouseReleaseEvent(QMouseEvent* event);
 	void TrigMaximize();
 	void mouseDoubleClickEvent(QMouseEvent* event);
+	void on_minimize_app_clicked();
+	void on_maximize_app_clicked();
+	void on_close_app_clicked();
 };
