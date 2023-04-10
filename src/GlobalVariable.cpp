@@ -3,8 +3,8 @@
 //这些变量根据不同的系统而变化
 #ifdef Q_OS_WIN
 QString GlobalVariable::CurrentPlatform = "Windows";
-QString GlobalVariable::BaseDir = "./";
-QString GlobalVariable::ConfigPath = GlobalVariable::BaseDir + "config/config.json";
+QString GlobalVariable::BaseDir = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+QString GlobalVariable::ConfigPath = GlobalVariable::BaseDir + "/config/config.json";
 #endif // Win32
 
 #ifdef Q_OS_MACOS

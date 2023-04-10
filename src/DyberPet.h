@@ -3,6 +3,7 @@
 #include <QMainWindow>
 #include "ui_DyberPet.h"
 #include "GlobalVariable.h"
+#include "QFile"
 
 class GlobalVariable;
 class StatusMonitor;
@@ -21,4 +22,7 @@ public:
 
 private:
     Ui::DyberPetClass *ui;
+
+private slots:
+    void CreateConfig();
 };
