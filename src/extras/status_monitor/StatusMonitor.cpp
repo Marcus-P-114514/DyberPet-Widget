@@ -12,6 +12,10 @@ StatusMonitor::StatusMonitor(QWidget *parent)
 	CardShadow->setBlurRadius(30);
 	CardShadow->setOffset(0, 0);
 	ui->app_container->setGraphicsEffect(CardShadow);
+
+	//Í¸Ã÷±³¾°
+	setWindowFlags(Qt::WindowMinMaxButtonsHint | Qt::FramelessWindowHint);
+	setAttribute(Qt::WA_TranslucentBackground);
 }
 
 StatusMonitor::~StatusMonitor()
@@ -54,4 +58,59 @@ void StatusMonitor::InsertLog(QString LogType, QString LogContent)
 	ui->log_area->setReadOnly(1);
 	DebugOut = DebugOut + LogContent;
 	qDebug() << DebugOut;
+}
+
+void StatusMonitor::mousePressEvent(QMouseEvent* event)
+{
+	if (event->button() == Qt::LeftButton) {
+		if (WindowMaximized == 0) {
+			MouseMovement = 1;
+			MousePos = event->globalPos() - this->pos();
+		}
+	}
+}
+
+void StatusMonitor::mouseMoveEvent(QMouseEvent* event)
+{
+	if (MouseMovement == 1) {
+		move(event->globalPos() - MousePos);
+	}
+}
+
+void StatusMonitor::mouseReleaseEvent(QMouseEvent* event)
+{
+	MouseMovement = 0;
+}
+
+void StatusMonitor::TrigMaximize()
+{
+	if (WindowMaximized == 0) {
+		this->showMaximized();
+		WindowMaximized = 1;
+
+		QGraphicsDropShadowEffect* NoCardShadow = new QGraphicsDropShadowEffect(this);
+		NoCardShadow->setColor(QColor("#C1A6A5"));
+		NoCardShadow->setBlurRadius(0);
+		NoCardShadow->setOffset(0, 0);
+		ui->app_container->setGraphicsEffect(NoCardShadow);
+
+		ui->gridLayout->setMargin(0);
+	}
+	else {
+		this->showNormal();
+		WindowMaximized = 0;
+
+		QGraphicsDropShadowEffect* CardShadow = new QGraphicsDropShadowEffect(this);
+		CardShadow->setColor(QColor("#C1A6A5"));
+		CardShadow->setBlurRadius(30);
+		CardShadow->setOffset(0, 0);
+		ui->app_container->setGraphicsEffect(CardShadow);
+
+		ui->gridLayout->setMargin(11);
+	}
+	
+}
+
+void StatusMonitor::mouseDoubleClickEvent(QMouseEvent* event) {
+	StatusMonitor::TrigMaximize();
 }
