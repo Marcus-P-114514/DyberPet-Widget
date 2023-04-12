@@ -23,7 +23,7 @@ public:
 
 private:
     Ui::DyberPetClass *ui;
-
+    
 private slots:
     void CreateConfig();
 };

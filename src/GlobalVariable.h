@@ -11,7 +11,10 @@ class GlobalVariable
         static QString CurrentPlatform;
         static QString BaseDir;
         static QString ConfigPath;
-        static bool override_hdpi;
+        static bool OverideHDPI;
         static QString DyberPetVersion;
         static QString DyberPetWidgetVersion;
+        static QString ShowLogWindow;
+        static QString ToggleLogWindow;
+        static QString LogLevel;
 };
