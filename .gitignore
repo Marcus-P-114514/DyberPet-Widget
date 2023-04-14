@@ -55,4 +55,4 @@ compile_commands.json
 .vs/
 src/x64/
 src/config/
-lib/DyberPet.Settings/x64
+lib/DyberPetSettings/x64/
