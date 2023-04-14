@@ -1,7 +1,0 @@
-﻿  moc DyberPetSettings.h
-   E:\Dev\GitHub\DyberPet-Widget\lib\DyberPetSettings\DyberPetSettings.h(0): Note: No relevant classes found. No output generated.
-  stdafx.cpp
-  DyberPetSettings.cpp
-  moc_DyberPetSettings.cpp
-    正在创建库 E:\Dev\GitHub\DyberPet-Widget\src\x64\Debug\DyberPet.Settings.lib 和对象 E:\Dev\GitHub\DyberPet-Widget\src\x64\Debug\DyberPet.Settings.exp
-  DyberPetSettings.vcxproj -> E:\Dev\GitHub\DyberPet-Widget\src\x64\Debug\DyberPet.Settings.dll
