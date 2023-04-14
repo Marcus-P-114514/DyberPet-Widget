@@ -1,0 +1,19 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+variables: # pipeline-level
+  branch: 'azure_branch'
+
+trigger:
+- master
+pool:
+  vmImage: 'ubuntu-latest'
+steps:
+- script: |
+   git remote add github https://github.com/Marcus-P-114514/DyberPet-Widget.git
+   git checkout -b $(branch)
+   git push -u github $(branch)
+
+
+  displayName: 'Command Line Script'
