@@ -34,3 +34,13 @@ QString GlobalVariable::ConfigPath = GlobalVariable::BaseDir + "/DyberPet/config
 //这些变量与运行的操作系统无关
 QString GlobalVariable::DyberPetVersion = "v.0.2.2";
 QString GlobalVariable::DyberPetWidgetVersion = "v.0.0.1";
+
+//这些是配置的默认值
+QString GlobalVariable::GravityRead = "0.1";
+QString GlobalVariable::FixDragSpeedXRead = "1.0";
+QString GlobalVariable::FixDragSpeedYRead = "1.0";
+QString GlobalVariable::TunableScaleRead = "1.0";
+QString GlobalVariable::VolumeRead = "0.4";
+QString GlobalVariable::OnTopHintRead = "Enabled";
+QString GlobalVariable::DefaultPetRead = "";
+QString GlobalVariable::defaultActRead = "";

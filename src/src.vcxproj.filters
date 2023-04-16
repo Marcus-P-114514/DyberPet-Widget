@@ -24,6 +24,15 @@
     <Filter Include="Resource Files\StatusMonitor">
       <UniqueIdentifier>{0bbd2aa4-a7a8-4ad2-b87c-4a1428604045}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Status Monitor">
+      <UniqueIdentifier>{d281203c-5ba2-4cb5-aa95-1f5a84fc2a75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Variables">
+      <UniqueIdentifier>{c8d5b8eb-41f6-4574-972d-e4becd386000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Settings">
+      <UniqueIdentifier>{b94b4d91-8060-4f90-9527-f98865cc22bc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="DyberPet.qrc">
@@ -35,7 +44,7 @@
     <QtMoc Include="DyberPet.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <ClCompile Include="DyberPet.cpp">
+    <ClCompile Include="DyberPet.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <QtRcc Include="extras\status_monitor\resources.qrc">
@@ -43,25 +52,18 @@
     </QtRcc>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="main.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="extras\status_monitor\StatusMonitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="extras\status_monitor\StatusMonitor.cc">
+      <Filter>Status Monitor</Filter>
     </ClCompile>
-    <ClCompile Include="variables\GlobalVariable.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="variables\GlobalVariable.cc">
+      <Filter>Variables</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="extras\status_monitor\StatusMonitor.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-  </ItemGroup>
-  <ItemGroup>
-    <QtUic Include="extras\status_monitor\StatusMonitor.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
+    <ClCompile Include="Settings.cc">
+      <Filter>Settings</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="extras\status_monitor\res\close.svg">
@@ -75,8 +77,21 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="extras\status_monitor\StatusMonitor.h">
+      <Filter>Status Monitor</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="extras\status_monitor\StatusMonitor.ui">
+      <Filter>Status Monitor</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="variables\GlobalVariable.h">
-      <Filter>Header Files</Filter>
+      <Filter>Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>Settings</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

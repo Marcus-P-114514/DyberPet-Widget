@@ -100,14 +100,15 @@ C:\Dev\Qt\5.12.12\msvc2017_64\bin\uic.exe</Command>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="variables\GlobalVariable.cpp" />
+    <ClCompile Include="Settings.cc" />
+    <ClCompile Include="variables\GlobalVariable.cc" />
     <QtRcc Include="DyberPet.qrc" />
     <QtRcc Include="extras\status_monitor\resources.qrc" />
     <QtUic Include="DyberPet.ui" />
     <QtMoc Include="DyberPet.h" />
-    <ClCompile Include="DyberPet.cpp" />
-    <ClCompile Include="extras\status_monitor\StatusMonitor.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="DyberPet.cc" />
+    <ClCompile Include="extras\status_monitor\StatusMonitor.cc" />
+    <ClCompile Include="main.cc" />
     <QtUic Include="extras\status_monitor\StatusMonitor.ui" />
   </ItemGroup>
   <ItemGroup>
@@ -119,6 +120,7 @@ C:\Dev\Qt\5.12.12\msvc2017_64\bin\uic.exe</Command>
     <None Include="extras\status_monitor\res\minimize.svg" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Settings.h" />
     <ClInclude Include="variables\GlobalVariable.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

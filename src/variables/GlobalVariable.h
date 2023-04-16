@@ -17,4 +17,13 @@ class GlobalVariable
         static QString ShowLogWindow;
         static QString ToggleLogWindow;
         static QString LogLevel;
+        static QString GravityRead;
+        static QString FixDragSpeedXRead;
+        static QString FixDragSpeedYRead;
+        static QString TunableScaleRead;
+        static QString VolumeRead;
+        static QString OnTopHintRead;
+        static QString DefaultPetRead;
+        static QString defaultActRead;
+        static QString LanguageCodeRead;
 };
