@@ -46,17 +46,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GlobalVariable.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="extras\status_monitor\StatusMonitor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="GlobalVariable.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="variables\GlobalVariable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="extras\status_monitor\StatusMonitor.h">
@@ -78,5 +73,10 @@
     <None Include="extras\status_monitor\res\minimize.svg">
       <Filter>Resource Files\StatusMonitor</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="variables\GlobalVariable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

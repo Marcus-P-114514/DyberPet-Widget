@@ -2,7 +2,7 @@
 
 #include <QMainWindow>
 #include "ui_DyberPet.h"
-#include "GlobalVariable.h"
+#include "variables/GlobalVariable.h"
 #include "QFile"
 #include "QSettings"
 

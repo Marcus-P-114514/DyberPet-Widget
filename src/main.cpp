@@ -1,7 +1,7 @@
 #include "DyberPet.h"
 #include <QtWidgets/QApplication>
 #include <QSettings>
-#include "GlobalVariable.h"
+#include "variables/GlobalVariable.h"
 
 class GlobalVariable;
 

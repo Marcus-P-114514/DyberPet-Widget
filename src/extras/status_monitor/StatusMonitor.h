@@ -5,7 +5,7 @@
 #include <QGraphicsDropShadowEffect>
 #include <QMouseEvent>
 #include "ui_StatusMonitor.h"
-#include "../../GlobalVariable.h"
+#include "../../variables/GlobalVariable.h"
 
 class GlobalVariable;
 

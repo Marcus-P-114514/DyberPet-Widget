@@ -5,8 +5,6 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "src", "src.vcxproj", "{EA6B2551-5C7D-4926-8EE2-2DE5798D9E3E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DyberPetSettings", "..\lib\DyberPetSettings\DyberPetSettings.vcxproj", "{32FDE4D8-BA9A-492C-B860-69672BE0868D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -17,10 +15,6 @@ Global
 		{EA6B2551-5C7D-4926-8EE2-2DE5798D9E3E}.Debug|x64.Build.0 = Debug|x64
 		{EA6B2551-5C7D-4926-8EE2-2DE5798D9E3E}.Release|x64.ActiveCfg = Release|x64
 		{EA6B2551-5C7D-4926-8EE2-2DE5798D9E3E}.Release|x64.Build.0 = Release|x64
-		{32FDE4D8-BA9A-492C-B860-69672BE0868D}.Debug|x64.ActiveCfg = Debug|x64
-		{32FDE4D8-BA9A-492C-B860-69672BE0868D}.Debug|x64.Build.0 = Debug|x64
-		{32FDE4D8-BA9A-492C-B860-69672BE0868D}.Release|x64.ActiveCfg = Release|x64
-		{32FDE4D8-BA9A-492C-B860-69672BE0868D}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
