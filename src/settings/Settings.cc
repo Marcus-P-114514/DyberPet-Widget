@@ -3,6 +3,12 @@
 class GlobalVariable;
 //StatusMonitor* StatusMonitorSettings = new StatusMonitor;
 
+void DyberPetSettings::InitPet() {
+	//需要调用Conf中的PetData()函数，这一部分还没写好
+	DyberPetSettings::InitSettings();
+	DyberPetSettings::SaveSettings();
+}
+
 void DyberPetSettings::InitSettings() {
 	//检查配置
 	if (QFile(GlobalVariable::ConfigPath).exists()) {
