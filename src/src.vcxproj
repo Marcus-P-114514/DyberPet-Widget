@@ -100,6 +100,7 @@ C:\Dev\Qt\5.12.12\msvc2017_64\bin\uic.exe</Command>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="conf\Conf.cc" />
     <ClCompile Include="settings\Settings.cc" />
     <ClCompile Include="variables\GlobalVariable.cc" />
     <QtRcc Include="DyberPet.qrc" />
@@ -120,6 +121,7 @@ C:\Dev\Qt\5.12.12\msvc2017_64\bin\uic.exe</Command>
     <None Include="extras\status_monitor\res\minimize.svg" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="conf\Conf.h" />
     <ClInclude Include="settings\Settings.h" />
     <ClInclude Include="variables\GlobalVariable.h" />
   </ItemGroup>

@@ -33,6 +33,9 @@
     <Filter Include="Settings">
       <UniqueIdentifier>{b94b4d91-8060-4f90-9527-f98865cc22bc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Conf">
+      <UniqueIdentifier>{d103539e-0e4d-4731-ac70-a5506210c974}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="DyberPet.qrc">
@@ -64,6 +67,9 @@
     <ClCompile Include="settings\Settings.cc">
       <Filter>Settings</Filter>
     </ClCompile>
+    <ClCompile Include="conf\Conf.cc">
+      <Filter>Conf</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="extras\status_monitor\res\close.svg">
@@ -92,6 +98,9 @@
     </ClInclude>
     <ClInclude Include="settings\Settings.h">
       <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="conf\Conf.h">
+      <Filter>Conf</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
