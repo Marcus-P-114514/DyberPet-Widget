@@ -13,6 +13,10 @@ int main(int argc, char *argv[])
     QString CustomHDPIScaleRead = ReadConfig->value("HDPI/CustomScale").toString();
     delete ReadConfig;
 
+    if (EnableHDPIScaleRead == "") {
+        EnableHDPIScaleRead = "On";
+    }   //在HDPI/EnableHDPIScale为空时（通常是由于未创建config导致的）默认开启HDPI
+
     if (EnableHDPIScaleRead == "On") {
         if (OverrideHDPIRead == "On") {
             if (CustomHDPIScaleRead == "1.00") {
@@ -58,7 +62,7 @@ int main(int argc, char *argv[])
         }   //覆盖HDPI支持
         else {
             QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-        }
+        }   //仅开启HDPI支持
     }   //开启HDI支持
     else {
         QApplication::setAttribute(Qt::AA_DisableHighDpiScaling);

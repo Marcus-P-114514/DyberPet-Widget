@@ -12,11 +12,13 @@ class GlobalVariable
         static QString BaseDir;
         static QString ConfigPath;
         static bool OverideHDPI;
+        static bool EnableHDPIScale;
+        static QString CustomScaleFactor;
+        static bool ShowLogWindow;
+        static bool ToggleLogWindow;
+        static QString LogLevel;
         static QString DyberPetVersion;
         static QString DyberPetWidgetVersion;
-        static QString ShowLogWindow;
-        static QString ToggleLogWindow;
-        static QString LogLevel;
         static QString GravityRead;
         static QString FixDragSpeedXRead;
         static QString FixDragSpeedYRead;
@@ -24,6 +26,6 @@ class GlobalVariable
         static QString VolumeRead;
         static QString OnTopHintRead;
         static QString DefaultPetRead;
-        static QString defaultActRead;
+        static QString DefaultActRead;
         static QString LanguageCodeRead;
 };

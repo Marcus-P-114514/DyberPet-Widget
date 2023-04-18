@@ -13,6 +13,7 @@
 class DyberPetSettings
 {
 public slots:
+	void InitSettings();
 	void SaveSettings();
 	void GetPetList(QString DirName);
 

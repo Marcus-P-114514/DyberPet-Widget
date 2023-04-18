@@ -3,8 +3,6 @@
 
 class DyberPetSettings;
 
-QString GlobalVariable::ShowLogWindow;
-QString GlobalVariable::ToggleLogWindow;
 QString GlobalVariable::LogLevel;
 
 DyberPet::DyberPet(QWidget *parent)
@@ -31,12 +29,23 @@ DyberPet::DyberPet(QWidget *parent)
 
     //读取配置
     QSettings* ReadConfig = new QSettings(GlobalVariable::ConfigPath, QSettings::IniFormat);
-    GlobalVariable::ShowLogWindow = ReadConfig->value("StatusMonitor/ShowLogWindow").toString();
-    GlobalVariable::ToggleLogWindow = ReadConfig->value("StatusMonitor/ToggleLogWindow").toString();
+    if (ReadConfig->value("StatusMonitor/ShowLogWindow").toString() == "Enabled") {
+        GlobalVariable::ShowLogWindow = 1;
+    }	//ShowLogWindow为Enabled时，开启日志窗口
+    else {
+        GlobalVariable::ShowLogWindow = 0;
+    }	//ShowLogWindow为Disabled或者其他值时，关闭日志窗口
+
+    if (ReadConfig->value("StatusMonitor/ToggleLogWindow").toString() == "Enabled") {
+        GlobalVariable::ToggleLogWindow = 1;
+    }	//ToggleLogWindow为Enabled时，允许切换日志窗口
+    else {
+        GlobalVariable::ToggleLogWindow = 0;
+    }	//ToggleLogWindow为Disabled或者其他值时，禁止切换日志窗口
     GlobalVariable::LogLevel = ReadConfig->value("StatusMonitor/LogLevel").toString();
     delete ReadConfig;
 
-    if (GlobalVariable::ShowLogWindow == "Enabled") {
+    if (GlobalVariable::ShowLogWindow = 1) {
         StatusMonitorMain->show();
     }
 

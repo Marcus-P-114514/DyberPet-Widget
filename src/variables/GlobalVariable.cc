@@ -36,6 +36,11 @@ QString GlobalVariable::DyberPetVersion = "v.0.2.2";
 QString GlobalVariable::DyberPetWidgetVersion = "v.0.0.1";
 
 //这些是配置的默认值
+bool GlobalVariable::OverideHDPI = 0;
+bool GlobalVariable::EnableHDPIScale = 1;
+QString GlobalVariable::CustomScaleFactor = "1.00";
+bool GlobalVariable::ShowLogWindow = 0;
+bool GlobalVariable::ToggleLogWindow = 0;
 QString GlobalVariable::GravityRead = "0.1";
 QString GlobalVariable::FixDragSpeedXRead = "1.0";
 QString GlobalVariable::FixDragSpeedYRead = "1.0";
@@ -43,4 +48,5 @@ QString GlobalVariable::TunableScaleRead = "1.0";
 QString GlobalVariable::VolumeRead = "0.4";
 QString GlobalVariable::OnTopHintRead = "Enabled";
 QString GlobalVariable::DefaultPetRead = "";
-QString GlobalVariable::defaultActRead = "";
+QString GlobalVariable::DefaultActRead = "";
+QString GlobalVariable::LanguageCodeRead = "CN";
