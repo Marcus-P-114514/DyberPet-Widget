@@ -8,9 +8,15 @@
 #include "QJsonArray"
 #include "QDebug"
 #include "../extras/status_monitor/StatusMonitor.h"
+#include "../variables/GlobalVariable.h"
 
 class DyberPetSettings
 {
 public slots:
+	void SaveSettings();
 	void GetPetList(QString DirName);
+
+private:
+	QStringList Folders;
+	QStringList SubPet;
 };

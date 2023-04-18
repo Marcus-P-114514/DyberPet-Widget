@@ -1,10 +1,34 @@
 #include "Settings.h"
 
+class GlobalVariable;
+
+void DyberPetSettings::SaveSettings() {
+	QSettings* CreateConfig = new QSettings(GlobalVariable::ConfigPath, QSettings::IniFormat);
+	CreateConfig->setValue("HDPI/OverrideHDPI", "Off");
+	CreateConfig->setValue("HDPI/EnableHDPIScale", "On");
+	CreateConfig->setValue("HDPI/CustomScale", "1.00");
+
+	CreateConfig->setValue("StatusMonitor/ShowLogWindow", "Disabled");
+	CreateConfig->setValue("StatusMonitor/ToggleLogWindow", "Disabled");
+	CreateConfig->setValue("StatusMonitor/LogLevel", "Info");
+
+	CreateConfig->setValue("DyberPet/Gravity", GlobalVariable::GravityRead);
+	CreateConfig->setValue("DyberPet/FixDragSpeedX", GlobalVariable::FixDragSpeedXRead);
+	CreateConfig->setValue("DyberPet/FixDragSpeedY", GlobalVariable::FixDragSpeedYRead);
+	CreateConfig->setValue("DyberPet/TunableScale", GlobalVariable::TunableScaleRead);
+	CreateConfig->setValue("DyberPet/Volume", GlobalVariable::VolumeRead);
+	CreateConfig->setValue("DyberPet/OnTopHint", GlobalVariable::OnTopHintRead);
+	CreateConfig->setValue("DyberPet/DefaultPet", GlobalVariable::DefaultPetRead);
+	CreateConfig->setValue("DyberPet/defaultAct", GlobalVariable::defaultActRead);
+	CreateConfig->setValue("DyberPet/LanguageCode", GlobalVariable::LanguageCodeRead);
+
+	delete CreateConfig;
+}
+
 void DyberPetSettings::GetPetList(QString DirName) {
 	//初步获取桌宠列表
 	QDir TargetDir(DirName);
-	QStringList Folders = TargetDir.entryList(QDir::Dirs);
-	QStringList SubPet;
+	Folders = TargetDir.entryList(QDir::Dirs);
 	Folders.removeOne("sys");
 	Folders.removeOne(".");
 	Folders.removeOne("..");
