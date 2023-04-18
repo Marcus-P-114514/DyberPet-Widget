@@ -1,6 +1,8 @@
 #include "DyberPet.h"
 #include "extras/status_monitor/StatusMonitor.h"
 
+class DyberPetSettings;
+
 QString GlobalVariable::ShowLogWindow;
 QString GlobalVariable::ToggleLogWindow;
 QString GlobalVariable::LogLevel;
@@ -37,6 +39,9 @@ DyberPet::DyberPet(QWidget *parent)
     if (GlobalVariable::ShowLogWindow == "Enabled") {
         StatusMonitorMain->show();
     }
+
+    DyberPetSettings* DPS = new DyberPetSettings;
+    DPS->GetPetList("./res/role/");
 }
 
 DyberPet::~DyberPet()

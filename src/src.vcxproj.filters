@@ -61,7 +61,7 @@
     <ClCompile Include="variables\GlobalVariable.cc">
       <Filter>Variables</Filter>
     </ClCompile>
-    <ClCompile Include="Settings.cc">
+    <ClCompile Include="settings\Settings.cc">
       <Filter>Settings</Filter>
     </ClCompile>
   </ItemGroup>
@@ -90,7 +90,7 @@
     <ClInclude Include="variables\GlobalVariable.h">
       <Filter>Variables</Filter>
     </ClInclude>
-    <ClInclude Include="Settings.h">
+    <ClInclude Include="settings\Settings.h">
       <Filter>Settings</Filter>
     </ClInclude>
   </ItemGroup>

@@ -5,6 +5,7 @@
 #include "variables/GlobalVariable.h"
 #include "QFile"
 #include "QSettings"
+#include "settings/Settings.h"
 
 class GlobalVariable;
 class StatusMonitor;
